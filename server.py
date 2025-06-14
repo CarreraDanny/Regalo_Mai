@@ -23,13 +23,14 @@ class CustomHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
     def guess_type(self, path):
         """Override to ensure proper content types"""
         mimetype, encoding = super().guess_type(path)
+        path_str = str(path)
         
         # Ensure proper MIME types for web files
-        if path.endswith('.css'):
+        if path_str.endswith('.css'):
             return 'text/css'
-        elif path.endswith('.js'):
+        elif path_str.endswith('.js'):
             return 'application/javascript'
-        elif path.endswith('.html'):
+        elif path_str.endswith('.html'):
             return 'text/html'
         
         return mimetype
@@ -37,7 +38,7 @@ class CustomHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
 def main():
     """Start the web server"""
     # Configuration
-    PORT = int(os.environ.get('PORT', 5000))
+    PORT = int(os.environ.get('PORT', 8080))
     HOST = '0.0.0.0'  # Listen on all interfaces for Replit
     
     # Change to the directory containing our files
