@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Pequeña Hermosa - 8 Meses Juntos</title>
+    <meta name="description" content="Una página especial para celebrar 8 meses de amor infinito. Un regalo romántico lleno de recuerdos y amor.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="heart-loader">❤️</div>
+            <p class="loading-text">Cargando algo especial...</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+        <!-- Floating Hearts Background -->
+        <div class="floating-hearts">
+            <div class="heart-particle heart-1">❤️</div>
+            <div class="heart-particle heart-2">💖</div>
+            <div class="heart-particle heart-3">💕</div>
+            <div class="heart-particle heart-4">❤️</div>
+            <div class="heart-particle heart-5">💗</div>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">8 Meses</h1>
+                <p class="hero-subtitle">de amor infinito</p>
+                <div class="hero-heart">❤️</div>
+                <p class="hero-message">Para mi pequeña hermosa</p>
+            </div>
+        </section>
+
+        <!-- Photo Carousel Section -->
+        <section class="carousel-section">
+            <h2 class="section-title">Nuestros Momentos</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-slide active">
+                            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Pareja caminando en la playa al atardecer">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Manos entrelazadas con corazones de luz">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Cena romántica con velas">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Siluetas de pareja con luces de ciudad">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" alt="Ramo de rosas rojas románticas">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev-btn" id="prevBtn">‹</button>
+                <button class="carousel-btn next-btn" id="nextBtn">›</button>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </section>
+
+        <!-- Romantic Message Section -->
+        <section class="message-section">
+            <h2 class="section-title">Para Ti, Mi Amor</h2>
+            <div class="message-container">
+                <div class="message-content">
+                    <div id="typewriter-text" class="typewriter-text"></div>
+                    <div id="signature" class="signature hidden">
+                        <p>Con todo mi amor,</p>
+                        <p class="signature-name">Danny 💕</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Music Video Section -->
+        <section class="video-section">
+            <h2 class="section-title">Nuestra Canción</h2>
+            <div class="video-container">
+                <iframe 
+                    id="musicVideo"
+                    src="https://www.youtube.com/embed/kJQP7kiw5Fk" 
+                    title="Canción Romántica - Despacito (Romantic Version)"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="video-message">Esta canción me recuerda a nosotros 💖</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-heart">❤️</div>
+            <p class="footer-message">8 meses... y toda una vida por delante</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
