@@ -2,25 +2,23 @@
 
 ## Overview
 
-This is a romantic anniversary website built to celebrate 8 months together. It's a full-stack application featuring a beautiful, animated frontend with a romantic theme and a backend infrastructure ready for future enhancements. The website displays a heartfelt message with typewriter effects, photo carousel, and embedded music video.
+This is a romantic Spanish anniversary website built to celebrate 8 months together. It's a vanilla HTML/CSS/JavaScript website with Python server backend, featuring beautiful animations with neon red/pink effects, romantic themes, and interactive elements. The website displays a heartfelt Spanish love message with typewriter effects, photo carousel, and embedded music video.
 
 ## System Architecture
 
 ### Frontend Architecture
-- **Framework**: React 18 with TypeScript
-- **Styling**: Tailwind CSS with custom romantic theme (neon red/pink color scheme)
-- **UI Components**: Shadcn/ui component library with Radix UI primitives
-- **Animations**: Framer Motion for smooth animations and transitions
-- **Routing**: Wouter for lightweight client-side routing
-- **State Management**: TanStack Query for server state management
-- **Build Tool**: Vite for fast development and optimized builds
+- **Technology**: Vanilla HTML5, CSS3, and JavaScript (ES6+)
+- **Styling**: Custom CSS with neon red/pink romantic color scheme
+- **Fonts**: Google Fonts (Dancing Script for headers, Poppins for body text)
+- **Animations**: CSS keyframe animations with JavaScript triggers
+- **Features**: Typewriter effects, image carousel, floating hearts, scroll animations
+- **Responsive**: Mobile-first design with CSS media queries
 
 ### Backend Architecture
-- **Runtime**: Node.js 20 with Express.js
-- **Language**: TypeScript with ES modules
-- **Database ORM**: Drizzle ORM configured for PostgreSQL
-- **Session Management**: Connect-pg-simple for PostgreSQL session storage
-- **Development**: Hot reload with tsx for TypeScript execution
+- **Server**: Python 3.11 with built-in HTTP server
+- **Port**: Running on port 8000 for static file serving
+- **Security**: Basic HTTP security headers implementation
+- **File Serving**: Custom MIME type handling for web assets
 
 ### Design System
 - **Typography**: Dancing Script for romantic headings, Poppins for body text
