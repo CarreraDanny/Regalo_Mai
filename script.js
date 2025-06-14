@@ -37,6 +37,20 @@ Mi pequeña, eres mi lugar favorito en este mundo, y estos 8 meses han sido solo
 
 Te amo más de lo que las palabras pueden expresar.`;
 
+    // Preload images function
+    function preloadImages() {
+        const imagePromises = [];
+        for (let i = 1; i <= 5; i++) {
+            const img = new Image();
+            img.src = `FOTOS/${i}.jpg`;
+            imagePromises.push(new Promise((resolve) => {
+                img.onload = resolve;
+                img.onerror = resolve; // Still resolve to prevent hanging
+            }));
+        }
+        return Promise.all(imagePromises);
+    }
+
     // Initialize the website
     init();
 
@@ -127,9 +141,6 @@ Te amo más de lo que las palabras pueden expresar.`;
     }
 
     function initCarousel() {
-        // Preload images for better performance
-        preloadImages();
-        
         // Create dots
         for (let i = 0; i < totalSlides; i++) {
             const dot = document.createElement('span');
@@ -145,19 +156,6 @@ Te amo más de lo que las palabras pueden expresar.`;
 
         // Auto-advance slides (slower for better viewing)
         setInterval(nextSlide, 5000);
-    }
-
-    function preloadImages() {
-        const imagePromises = [];
-        for (let i = 1; i <= 5; i++) {
-            const img = new Image();
-            img.src = `FOTOS/${i}.jpg`;
-            imagePromises.push(new Promise((resolve) => {
-                img.onload = resolve;
-                img.onerror = resolve; // Still resolve to prevent hanging
-            }));
-        }
-        return Promise.all(imagePromises);
     }
 
     function updateCarousel() {
