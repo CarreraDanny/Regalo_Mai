@@ -1,26 +1,27 @@
-# Regalo para Mai 💕
+# Página Web Romántica – Proyecto Creativo
 
-Una página web romántica creada especialmente para celebrar nuestros 8 meses juntos.
+Una página web interactiva diseñada como regalo personalizado, con animaciones, música y diseño responsivo, ideal para celebraciones especiales.
 
 ## Características
 
-- 🖼️ Carrusel de fotos con nuestros momentos especiales
-- 💝 Mensaje de amor con efecto de máquina de escribir
-- 🎵 Video musical de fondo
-- 💖 Efectos de corazones flotantes
-- 📱 Diseño completamente responsivo
+- 🖼️ Carrusel de imágenes personalizadas
+- 💬 Mensaje animado con efecto de máquina de escribir
+- 🎵 Música de fondo integrada
+- 💖 Animaciones románticas (corazones flotantes)
+- 📱 Diseño responsivo adaptable a móviles y tablets
 
 ## Tecnologías Utilizadas
 
-- HTML5
-- CSS3 (con efectos neon)
-- JavaScript (ES6+)
-- Fuentes de Google (Dancing Script, Poppins)
+- HTML5  
+- CSS3 (incluye efectos visuales personalizados)  
+- JavaScript (ES6+)  
+- Google Fonts
 
 ## Despliegue
 
-Este sitio está desplegado usando GitHub Pages y se puede ver en: [https://carreradanny.github.io/Regalo_Mai/](https://carreradanny.github.io/Regalo_Mai/)
+Este proyecto está disponible en GitHub Pages:  
+👉 [https://carreradanny.github.io/Regalo_Mai/](https://carreradanny.github.io/Regalo_Mai/)
 
 ---
 
-*Con todo mi amor, para mi pequeña hermosa* 💕
+*Este proyecto demuestra el uso creativo de tecnologías web para experiencias personalizadas e interactivas.*
